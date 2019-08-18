@@ -2,15 +2,14 @@
 $(function () {
     $('#azul').click(() => {
         $('p').css("color", "blue");
-        $('p').fadeOut();
+        $('p').fadeOut('fast');
         $('p').delay(2000);
         $('p').fadeIn();
     });
 
     $('#vermelho').click(() => {
         $('p').css("color", "red");
-        $('p').fadeOut('slow');
-        $('p').delay(2000);
-        $('p').fadeIn('slow');
+        $('p').fadeOut(3000);
+        $('p').fadeIn(5000);
     });
 })
