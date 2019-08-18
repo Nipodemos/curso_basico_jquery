@@ -1,24 +1,27 @@
 // $(seletor).ação();
 $(function () {
-    $('#azul').click(() => {
-
-        $('p')
-            .css("color", "blue")
-            .fadeOut('fast')
-            .delay(2000)
-            .fadeIn();
+    $('#link1').click(() => {
+        $('#i1').show();
+        $('#i2').hide();
+        $('#i3').hide();
+        $('#i4').hide();
     });
-
-    $('#vermelho').click(() => {
-        $('p').css("color", "red");
-
-        $('#mensagem')
-            .text("Cor alterada com sucesso")
-            .css({ color: 'red', border: '1px solid red', padding: '0 3px' })
-            .delay(3000)
-            .fadeOut()
-            .addClass('green');
-
-        $('#vermelho').removeClass('red')
+    $('#link2').click(() => {
+        $('#i1').hide();
+        $('#i2').show();
+        $('#i3').hide();
+        $('#i4').hide();
+    });
+    $('#link3').click(() => {
+        $('#i1').hide();
+        $('#i2').hide();
+        $('#i3').show();
+        $('#i4').hide();
+    });
+    $('#link4').click(() => {
+        $('#i1').hide();
+        $('#i2').hide();
+        $('#i3').hide();
+        $('#i4').show();
     });
 })
