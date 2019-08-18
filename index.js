@@ -9,7 +9,10 @@ $(function () {
 
     $('#vermelho').click(() => {
         $('p').css("color", "red");
-        $('p').fadeOut(3000);
-        $('p').fadeIn(5000);
+        $('#mensagem').text("Cor alterada com sucesso");
+        $('#mensagem').css('color', 'red');
+        $('#mensagem').css('border', '1px solid red');
+        $('#mensagem').delay(3000);
+        $('#mensagem').fadeOut();
     });
 })
