@@ -14,8 +14,11 @@ $(function () {
 
         $('#mensagem')
             .text("Cor alterada com sucesso")
-            .css({ color: 'red', border: '1px solid red', backgroundColor: '#f08080' })
+            .css({ color: 'red', border: '1px solid red', padding: '0 3px' })
             .delay(3000)
-            .fadeOut();
+            .fadeOut()
+            .addClass('green');
+
+        $('#vermelho').removeClass('red')
     });
 })
