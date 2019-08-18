@@ -1,5 +1,5 @@
 // $(seletor).ação();
-$(document).ready(() => {
+$(function () {
     $('button').click(() => {
         $('h1').hide();
     })
