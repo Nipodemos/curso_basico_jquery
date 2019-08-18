@@ -14,8 +14,7 @@ $(function () {
 
         $('#mensagem')
             .text("Cor alterada com sucesso")
-            .css('color', 'red')
-            .css('border', '1px solid red')
+            .css({ color: 'red', border: '1px solid red', backgroundColor: '#f08080' })
             .delay(3000)
             .fadeOut();
     });
